@@ -14,26 +14,15 @@
  * limitations under the License.
  */
 
-package com.example.android.lifecycles.step2;
+package com.example.android.lifecycles.step5
 
-import android.support.annotation.Nullable;
-
-import android.arch.lifecycle.ViewModel;
+import android.arch.lifecycle.MutableLiveData
+import android.arch.lifecycle.ViewModel
 
 /**
- * A ViewModel used for the {@link ChronoActivity2}.
+ * A ViewModel used in step 5.
  */
-public class ChronometerViewModel extends ViewModel {
+class SeekBarViewModel : ViewModel() {
 
-    @Nullable
-    private Long startDate;
-
-    @Nullable
-    public Long getStartDate() {
-        return startDate;
-    }
-
-    public void setStartDate(final long startDate) {
-        this.startDate = startDate;
-    }
+    var seekbarValue = MutableLiveData<Int>()
 }

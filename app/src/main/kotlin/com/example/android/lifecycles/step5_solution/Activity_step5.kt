@@ -14,22 +14,21 @@
  * limitations under the License.
  */
 
-package com.example.android.lifecycles.step5;
+package com.example.android.lifecycles.step5_solution
 
-import android.os.Bundle;
+import android.os.Bundle
 
-import android.arch.lifecycle.LifecycleActivity;
-import com.example.android.codelabs.lifecycle.R;
+import android.arch.lifecycle.LifecycleActivity
+import com.example.android.codelabs.lifecycle.R
 
 /**
- * Shows two {@link Fragment_step5} fragments.
+ * Shows two [Fragment_step5] fragments.
  */
-public class Activity_step5 extends LifecycleActivity {
+class Activity_step5 : LifecycleActivity() {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_step5);
+        setContentView(R.layout.activity_step5_solution)
     }
 }

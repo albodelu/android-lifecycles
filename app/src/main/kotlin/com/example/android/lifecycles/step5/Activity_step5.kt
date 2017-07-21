@@ -14,24 +14,21 @@
  * limitations under the License.
  */
 
-package com.example.android.lifecycles.step1;
+package com.example.android.lifecycles.step5
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.widget.Chronometer;
+import android.os.Bundle
 
-import com.example.android.codelabs.lifecycle.R;
+import android.arch.lifecycle.LifecycleActivity
+import com.example.android.codelabs.lifecycle.R
 
+/**
+ * Shows two [Fragment_step5] fragments.
+ */
+class Activity_step5 : LifecycleActivity() {
 
-public class ChronoActivity1 extends AppCompatActivity {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        Chronometer chronometer = (Chronometer) findViewById(R.id.chronometer);
-
-        chronometer.start();
+        setContentView(R.layout.activity_step5)
     }
 }
